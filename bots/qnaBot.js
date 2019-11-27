@@ -40,7 +40,7 @@ class QnABot extends ActivityHandler {
             const membersAdded = context.activity.membersAdded;
             for (let cnt = 0; cnt < membersAdded.length; cnt++) {
                 if (membersAdded[cnt].id !== context.activity.recipient.id) {
-                    await context.sendActivity('情報システム部FAQへようこそ。私に何か質問してみてください。お答えできることがあるかもしれません。');
+                    await context.sendActivity('FAQへようこそ。私に何か質問してみてください。お答えできることがあるかもしれません。');
                 }
             }
 
