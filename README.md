@@ -1,2 +1,9 @@
-# js-azure-qnamaker-bot
-QnA Makerから作られたAzure Bot Serviceのスクリプトをカスタマイズしたもの (Node.js)
+# 概要
+QnA Makerから作られたAzure Bot Serviceのスクリプトをカスタマイズしたもの (Node.js)。
+
+初期のスクリプトから、以下の変更を加えている。
+
+* follow-up promptに対応。
+* スコアの高い回答が複数ある場合、「以下の該当がある」として選択肢を返す。
+* ユーザーが入力した質問とQnA Makerの質問が完全一致しない場合、QnA Maker側の質問文を「○○というご質問ですね」と返す。
+
